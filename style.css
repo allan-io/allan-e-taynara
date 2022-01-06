@@ -23,6 +23,10 @@ body {
   padding: 4rem;
 }
 
+.quizz-header h2 {
+  margin-bottom: 2rem;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -35,6 +39,18 @@ h2 {
 ul li {
   font-size: 1.1rem;
   margin: 1rem 0;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+ul li label:hover {
+  color: #737b83;
+}
+
+ul li input {
+  cursor: pointer;
 }
 
 button {
@@ -50,4 +66,38 @@ button {
 
 button:hover {
   background-color: #0599e2;
+}
+
+.result-container {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(140, 219, 243);
+}
+
+.result-header {
+  font-size: 2rem;
+}
+
+.result-message {
+  font-size: 1.1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.correctStyle {
+  background-color: green;
+  border-radius: 15px;
+  padding: 0.2rem;
+}
+
+.wrongStyle {
+  background-color: red;
+  border-radius: 15px;
+  padding: 0.2rem;
 }

@@ -11,28 +11,33 @@
   <body>
     <div class="quizz-container">
       <div class="quizz-header">
-        <h2>Question text</h2>
+        <h2 class="question">Question text</h2>
         <ul>
           <li>
             <input type="radio" id="a" name="answer" />
-            <label for="a">question</label>
+            <label class="aEl" for="a">question</label>
           </li>
           <li>
             <input type="radio" id="b" name="answer" />
-            <label for="b">question</label>
+            <label class="bEl" for="b">question</label>
           </li>
           <li>
             <input type="radio" id="c" name="answer" />
-            <label for="c">question</label>
+            <label class="cEl" for="c">question</label>
           </li>
           <li>
             <input type="radio" id="d" name="answer" />
-            <label for="d">question</label>
+            <label class="dEl" for="d">question</label>
           </li>
         </ul>
       </div>
 
-      <button>Submit</button>
+      <button class="submitBtn">Responder</button>
+      <button class="nextBtn hidden">Proxima Pergunta</button>
+    </div>
+    <div class="result-container hidden">
+      <h3 class="result-header">RESULTADO</h3>
+      <p class="result-message"></p>
     </div>
   </body>
 </html>
